@@ -28,49 +28,45 @@
 
     <!--Booking Section-->
     <main class="main-content container">
-
-        <div class="booking-content">
-            <h1>Mega City Bus</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div id="bookingContent" class="booking-content">
+            <h1>Mega City bus</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt iusto doloremque in commodi? Fugiat consequuntur sequi iusto, delectus nam sunt dolorum incidunt placeat corrupti quam expedita similique voluptatum aut.
+            </p>
         </div>
+    
 
 
-        <div class="booking-form">
-            <h3>Explore By Bus</h3>
-
-            <div class="inputs">
-                <div class="input-group">
-                    <label" for="">From</label>
-                    <input class="inp-style" type="text" name="" placeholder="Dhaka">
-                </div>
-                <div class="input-group">
-                    <label" for="">From</label>
-                    <input class="inp-style" type="text" name="" placeholder="Chittagone">
-                </div>
+        <div id="bookingForm" class="booking-form">
+            <h4 id="warning"></h4>
+             <h3>Book Ocean Time</h3>
+             <div class="input-group">
+                 <label for="">Form</label>
+                 <input id="formInput" class="inp-style" type="text" placeholder="Dhaka, Bangladesh">
+             </div>
+             <div class="input-group">
+                <label for="">To</label>
+                <input id="toInput" class="inp-style" type="text" name="" placeholder="New York, United States">
             </div>
-
             <div class="inputs">
                 <div class="input-group">
-                    <label" for="">Departure</label>
-                    <input class="inp-style" type="date" name="">
+                    <label for="">Departure</label>
+                    <input class="inp-style" id="departureInput" type="date">
                 </div>
                 <div class="input-group">
                     <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
+                    <input id="returnInput" class="inp-style" type="date" name="">
                 </div>
             </div>
-            <div class="inputs">
-                <div class="input-group f-class">
-                    <div>
-                        <label for="">First Class ($150)</label>
-                        <input id="firstClassInput" class="inp-style inp-width" type="number" value="0" min="0">
-                    </div>
-                    <div class="plus-minus-btn">
-                        <button id="firstClassIncrease" class="custom-btn"><i class="fas fa-plus"></i></button>
-                        <button id="firstClassDecrease" class="custom-btn"><i class="fas fa-minus"></i></button>
-                    </div>
+            <div class="input-group f-class">
+                <div>
+                    <label for="">First Class ($150)</label>
+                    <input id="firstClassInput" class="inp-style inp-width" type="number" value="0" min="0">
                 </div>
-                 
+                <div class="plus-minus-btn">
+                    <button id="firstClassIncrease" class="custom-btn"><i class="fas fa-plus"></i></button>
+                    <button id="firstClassDecrease" class="custom-btn"><i class="fas fa-minus"></i></button>
+                </div>
+            </div>
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
@@ -80,25 +76,24 @@
                     <button id="economyIncrease" class="custom-btn"><i class="fas fa-plus"></i></button>
                     <button id="economyDecrease" class="custom-btn"><i class="fas fa-minus"></i></button>
                 </div>
-
             </div>
-            </div>
-            <div class="calculations">
+            <div class="calculation">
                 <div class="amount">
                     <div class="left">
-                        <p>Subtotal</p>
+                        <p>Subtotal:
+                        </p>
+    
                     </div>
                     <div class="right">
-                        <p>$<span id="subTotal">00</span></p>
+                        <p><span id="subTotal">$500</span></p>
                     </div>
                 </div>
-
                 <div class="amount">
                     <div class="left">
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$<span id="tax">00</span></p>
+                        <p><span id="tax">$50</span></p>
                     </div>
                 </div>
                 <hr>
@@ -107,11 +102,22 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$<span id="totalPrice">00</span></p>
+                        <p><span id="Total">$600</span></p>
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="bookNow" class="btn-style">Book Now</button>   
+        </div>
+        <div id="bookingConfirm" class="booking-confirm">
+            <h2><i class="fas fa-check-circle"></i> <span>Congrats!!</span> Your Ticket Has Been Booked Successfully.</h2>
+            
+            <div class="ticketDetails">
+                <h3>You Paid $<span id="paymentSlip"> </span> Successfully</h3>
+            </div>
+    
+            <button id="backHome" class="custom-btn1">
+                Back To Home Page
+            </button>
         </div>
     </main>
      <script src="./plugins/js/all.js"></script>
